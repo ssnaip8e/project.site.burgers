@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Burgers</title>
-   <link rel="stylesheet" href="./styles/normalize.css">
-   <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body class="page">
-   <header class="header">
-      <div class="container">
-         <div class="banner">
-            <div class="banner__intro intro">
-               <h1 class="banner__title"><span class="banner__title--span">Работаем с 11:00 до 22:00</span><br>
-                  Лучшие бургеры</h1>
-               <p class="banner__text">Закажи наши фирменные бургеры или собери что-то своё, а наши курьеры доставят за 30 минут</p>
-               <input type="submit" class="banner__button button" value="Заказать">
-            </div>
-            <div class="banner__visual visual">
-               <div class="banner__visual-bg"></div>
-               <img src="./images/burger.png" alt="" class="banner__img img">
-            </div>
-         </div>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burgers</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+  </head>
+  <body>
+    
+    <!-- `header` -->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__intro">
+          <h1 class="header__title">
+            <span class="header__title-note">Работаем с 11:00 до 22:00</span><br/>
+            Лучшие бургеры
+          </h1>
+          <p class="header__text">
+            Закажи наши фирменные бургеры или собери что-то своё, а наши курьеры доставят за 30 минут
+          </p>
+          <input class="header__button button" type="submit" value="Заказать">
+        </div>
+        <div class="header__visual">
+          <div class="header__visual-bg"></div>
+          <img class="header__img" src="./assets/img/burger.png" alt="burger">
+        </div>
       </div>
-   </header>
-   <main class="promo">
-      <div class="container">
-         <div class="wrapper">
-            <div class="promo__card promo__card--left">
-               <p class="promo__card-text promo__card-text--sale">Скидка</p>
-               <p class="promo__card-text promo__card-text--size-big">-20%</p>
-               <p class="promo__card-text">При заказе на 3х и более персон мы делаем скидки, а также предоставляем скидки именинникам</p>
-            </div>
-            <div class="promo__card promo__card--right">
-               <p class="promo__card-text promo__card-text--size-middle">Бесплатно</p>
-               <p class="promo__card-text">При заказе на сумму 500 рублей и более -<br> доставляем бесплатно</p>
-               <input type="submit" class="promo__button button" value="Заказать">
-            </div>
-         </div>
+    </header>
+
+    <!-- `main` -->
+    <main class="promo">
+      <div class="promo__container">
+        <div class="promo__card promo__card--left">
+          <p class="promo__card-text promo__card-text--sale">Скидка</p>
+          <p class="promo__card-text promo__card-text--size-big">-20%</p>
+          <p class="promo__card-text">
+            При заказе на 3х и более персон мы делаем скидки, а также предоставляем скидки именинникам
+          </p>
+        </div>
+        <div class="promo__card promo__card--right">
+          <p class="promo__card-text promo__card-text--size-middle">
+            Бесплатно
+          </p>
+          <p class="promo__card-text">
+            При заказе на сумму 500 рублей и более -<br>
+            доставляем бесплатно
+          </p>
+          <input class="promo__button" type="submit" value="Заказать">
+        </div>
       </div>
-   </main>
-   <footer class="footer">
-      <div class="container">
-         <div class="info">
-            <div class="info__logo">
-               <img src="./images/logo.svg" alt="burger.png" class="logo">
-            </div>
-            <div class="info__nav">
-               <h6 class="info__title">Основные ссылки</h6>
-               <ul class="list">
-                  <li class="list__item"><a class="list__link" href="">Меню</a></li>
-                  <li class="list__item"><a class="list__link" href="">Заказ и Доставка</a></li>
-                  <li class="list__item"><a class="list__link" href="">Метод оплаты</a></li>
-                  <li class="list__item"><a class="list__link" href="">Контакты</a></li>
-               </ul>
-            </div>
-            <div class="info__address address">
-               <h6 class="info__title">Основная информация</h6>
-               <ul class="list">
-                  <li class="list__item">Время<br>
-                     <span class="list__span">ПН-ВС<br>
-                     11:00-22:00 без перерывов</span></li>
-                  <li class="list__item">Адрес<br>
-                     <span class="list__span">Москва, ул. Тверская, 5, вход со двора</span></li>
-               </ul>
-            </div>
-            <div class="info__tel tel">
-               <ul class="list">
-                  <li class="list__item list__item--color">+7-900-787-13-13</li>
-                  <li class="list__item list__item--color">+7-900-700-14-14</li>
-               </ul>
-            </div>
-         </div>
+    </main>
+
+    <!-- `footer` -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img class="logo" src="./assets/img/logo.svg" alt="burger.png">
+        </div>
+        <div class="footer__nav">
+          <h6 class="footer__title">Основные ссылки</h6>
+          <ul class="footer__list list">
+            <li class="list__item"><a class="list__link" href="">Меню</a></li>
+            <li class="list__item"><a class="list__link" href="">Заказ и Доставка</a></li>
+            <li class="list__item"><a class="list__link" href="">Метод оплаты</a></li>
+            <li class="list__item"><a class="list__link" href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__address address">
+          <h6 class="footer__title">Основная информация</h6>
+          <ul class="footer__list list">
+            <li class="list__item">
+              Время<br>
+              <span class="list__span">
+                ПН-ВС<br>
+                11:00-22:00 без перерывов</span>
+            </li>
+            <li class="list__item">
+              Адрес<br>
+              <span class="list__span">Москва, ул. Тверская, 5, вход со двора</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__tel tel">
+          <ul class="footer__list">
+            <li class="list__item list__item--color">+7-900-787-13-13</li>
+            <li class="list__item list__item--color">+7-900-700-14-14</li>
+          </ul>
+        </div>
       </div>
-   </footer>
-</body>
+    </footer>
+
+  </body>
 </html>
